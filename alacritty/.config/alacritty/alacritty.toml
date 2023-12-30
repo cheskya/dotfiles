@@ -1,0 +1,23 @@
+# import needs to be at the top!
+import = [
+  "~/.config/alacritty/themes/catppuccin-mocha.toml"
+]
+
+[font]
+size = 10.0
+
+[font.normal]
+family = "CaskaydiaCove NF"
+style = "Regular"
+
+[font.bold]
+family = "CaskaydiaCove NF"
+style = "Bold"
+
+[font.italic]
+family = "CaskaydiaCove NF"
+style = "Italic"
+
+[font.bold_italic]
+family = "CaskaydiaCove NF"
+style = "Bold Italic"
