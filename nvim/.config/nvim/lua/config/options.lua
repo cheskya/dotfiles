@@ -3,9 +3,10 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.opt.expandtab = true
-vim.opt.softtabstop = 2
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
+vim.o.expandtab = true
+vim.o.softtabstop = 2
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
 
-vim.opt.number = true
+vim.o.number = true
+vim.o.relativenumber = true
