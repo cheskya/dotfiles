@@ -1,27 +1,23 @@
-# Dotfiles
+# dotfiles
 
-A collection of dotfiles that I use :3
+my collection of dotfiles :3
 
----
+**Note:** Neovim config still works with WSL and the Windows Terminal
 
-## Placing dotfiles in the right place
+## configs included
 
-1. Install `stow`
-2. Execute `stow {package-name}`
+1. Neovim
+2. Alacritty
 
----
+## requirements
 
-## Alacritty
+1. Arch Linux or EndeavourOS (not tested on other distros)
+2. [Node.js](https://nodejs.org/en) for mason (Neovim)
+3. `zip` and `unzip` for stylua (Neovim)
+4. `ripgrep` for telescope (Neovim)
 
-Mostly configured for Arch Linux (abandoned for now)
+## placing dotfiles in the right place
 
----
-
-## Neovim
-
-Mostly configured for WSL (Ubuntu) and the Windows Terminal.
-
-**Dependencies:**
-
-1. `zip` and `unzip` (for `stylua`)
-2. `ripgrep` (for `telescope`)
+1. Clone the repo into the home directory
+2. Install `stow`
+3. Execute `stow {package-name}`
