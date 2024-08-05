@@ -2,12 +2,11 @@
 
 my collection of dotfiles :3
 
-**Note:** Neovim config still works with WSL and the Windows Terminal
-
 ## configs included
 
 1. Neovim
-2. Alacritty
+2. Alacritty (kept for archive purposes)
+3. Wezterm
 
 ## requirements
 
