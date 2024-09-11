@@ -50,11 +50,25 @@ config.colors = {
 	},
 }
 
+config.background = {
+	{
+		source = {
+			File = "/home/chesca/Pictures/Wallpapers/pixel.png",
+		},
+		width = "100%",
+		repeat_y = "Mirror",
+		hsb = {
+			brightness = 0.3,
+		},
+	},
+}
+
 -- and the keyboard shortcuts!
 local act = wezterm.action
 
 config.keys = {
-	{ key = "W", mods = "SHIFT|ALT|CTRL", action = act.CloseCurrentPane({ confirm = true }) },
+	{ key = "W", mods = "CTRL|SHIFT", action = act.CloseCurrentPane({ confirm = true }) },
+	{ key = "W", mods = "SHIFT|ALT|CTRL", action = act.CloseCurrentTab({ confirm = true }) },
 }
 
 return config
