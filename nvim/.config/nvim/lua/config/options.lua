@@ -19,7 +19,7 @@ vim.o.relativenumber = true
 -- disable line wrapping
 vim.opt.wrap = false
 
--- disable persistent undo history
+-- enable persistent undo history
 vim.opt.undofile = true
 
 -- enable incremental searching
