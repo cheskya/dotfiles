@@ -4,16 +4,18 @@ my collection of dotfiles :3
 
 ## configs included
 
-1. Neovim
-2. Alacritty (kept for archive purposes)
-3. Wezterm
+- Neovim
+- Alacritty (kept for archive purposes)
+- Wezterm
+- Ranger
 
 ## requirements
 
-1. Arch Linux or EndeavourOS (not tested on other distros)
-2. [Node.js](https://nodejs.org/en) for mason (Neovim)
-3. `zip` and `unzip` for stylua (Neovim)
-4. `ripgrep` for telescope (Neovim)
+- Arch Linux or EndeavourOS (not tested on other distros)
+- [Node.js](https://nodejs.org/en) for mason (Neovim)
+- `zip` and `unzip` for stylua (Neovim)
+- `ripgrep` for telescope (Neovim)
+- `wl-clipboard` for clipboard (Neovim on Wayland)
 
 ## placing dotfiles in the right place
 
