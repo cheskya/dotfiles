@@ -23,13 +23,14 @@ return {
 				cpp = { "clang-format" },
 				bash = { "shfmt" },
 			},
-			format_on_save = {
-				lsp_fallback = true,
-				async = false,
-				timeout_ms = 500,
-			},
+			-- format_on_save = {
+			-- 	lsp_fallback = true,
+			-- 	async = false,
+			-- 	timeout_ms = 500,
+			-- },
 		})
 
+		-- manual auto-format keybind (for visual mode)
 		vim.keymap.set({ "n", "v" }, "<leader>mp", function()
 			conform.format({
 				lsp_fallback = true,
