@@ -2,6 +2,9 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- disable showing all diagnostics in current buffer
+vim.diagnostic.config({ virtual_text = false })
+
 -- change tabs to 2 spaces
 vim.o.expandtab = true
 vim.o.softtabstop = 2
