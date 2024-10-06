@@ -2,6 +2,11 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- show tabline even if only one tab is open
+-- on tabline, show the relative path to the current file
+vim.opt.showtabline = 2
+vim.opt.tabline = "%f"
+
 -- disable showing all diagnostics in current buffer
 vim.diagnostic.config({ virtual_text = false })
 
