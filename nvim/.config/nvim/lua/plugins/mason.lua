@@ -31,7 +31,7 @@ return {
 				"html",
 				"cssls",
 				"eslint",
-				"tsserver",
+				"ts_ls",
 				"emmet_ls",
 				"bashls",
 			},
