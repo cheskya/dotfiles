@@ -11,4 +11,15 @@ return {
 		{ "<leader>fh", "<cmd>Telescope help_tags<CR>" },
 		{ "<leader>fx", "<cmd>Telescope diagnostics<CR>" },
 	},
+  config = function()
+    local telescope = require("telescope")
+    telescope.setup({
+      pickers = {
+        find_files = {
+          hidden = true,
+          no_ignore = true
+        }
+      }
+    })
+  end
 }
