@@ -9,10 +9,12 @@ local config = wezterm.config_builder()
 -- For example, changing the color scheme:
 config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("CaskaydiaCove Nerd Font")
-config.font_size = 10.0
+config.font_size = 12.0
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
-config.show_tab_index_in_tab_bar = false
+config.show_tab_index_in_tab_bar = true
+config.show_new_tab_button_in_tab_bar = false
+config.tab_max_width = 20
 
 config.window_frame = {
 	-- The font used in the tab bar.
@@ -25,7 +27,7 @@ config.window_frame = {
 
 	-- The size of the font in the tab bar.
 	-- Default to 10.0 on Windows but 12.0 on other systems
-	font_size = 10.0,
+	font_size = 12.0,
 
 	-- The overall background color of the tab bar when
 	-- the window is focused
@@ -42,6 +44,7 @@ config.colors = {
 		active_tab = {
 			bg_color = "#b4befe",
 			fg_color = "#181825",
+      italic = true,
 		},
 		new_tab = {
 			bg_color = "#1e1e2e",
