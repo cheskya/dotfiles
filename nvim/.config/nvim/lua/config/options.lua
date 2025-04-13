@@ -2,6 +2,13 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.opt.signcolumn = "auto:1-3"
+vim.opt.foldcolumn = "1"
+vim.opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+
+-- colorcolumn
+vim.opt.colorcolumn = "80"
+
 -- show tabline even if only one tab is open
 -- on tabline, show the relative path to the current file
 vim.opt.showtabline = 2
