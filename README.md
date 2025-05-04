@@ -2,20 +2,39 @@
 
 my collection of dotfiles :3
 
+(everything written as code are either Pacman packages or code to execute)
+
 ## configs included
 
 - Neovim
-- Alacritty (kept for archive purposes)
 - Wezterm
 - Ranger
+- Zsh
+- Alacritty (kept for archive purposes)
 
 ## requirements
 
 - Arch Linux or EndeavourOS (not tested on other distros)
-- [Node.js](https://nodejs.org/en) for mason (Neovim)
-- `zip` and `unzip` for stylua (Neovim)
-- `ripgrep` for telescope (Neovim)
-- `wl-clipboard` for clipboard (Neovim on Wayland)
+- `neovim`
+- `wezterm`
+- `ranger`
+- `zsh` (set as default shell, see [Arch Wiki Page](https://wiki.archlinux.org/title/Zsh))
+- `alacritty`
+
+## dependencies
+
+### Neovim
+
+- `npm` (or `nvm`) for mason
+- `zip` and `unzip` for stylua
+- `ripgrep` for telescope
+- `wl-clipboard` for clipboard (if using Neovim on Wayland)
+
+### Zsh
+
+- `zsh-theme-powerlevel10k-git` (in AUR)
+- `zsh-autosuggestions`
+- `zsh-syntax-highlighting`
 
 ## placing dotfiles in the right place
 
