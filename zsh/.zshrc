@@ -10,6 +10,7 @@ fi
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias cpwd='echo -n $PWD | wl-copy && echo "Path copied to clipboard!"'
 
 # For menu select
 autoload -Uz compinit
