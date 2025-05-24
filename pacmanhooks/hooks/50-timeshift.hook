@@ -1,0 +1,11 @@
+#/etc/pacman.d/hooks/50-timeshift.hook
+
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = pre-upgrade timeshift snapshot
+When = PreTransaction
+Exec = /bin/sh -c "sudo -Hiu user konsole -e /etc/pacman.d/hooks.bin/killshot.sh | /etc/pacman.d/hooks.bin/timeshift.sh"

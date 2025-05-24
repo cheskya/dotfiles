@@ -11,10 +11,12 @@ my collection of dotfiles :3
 - Ranger
 - Zsh
 - Alacritty (kept for archive purposes)
+- Pacman hooks
 
 ## requirements
 
 - Arch Linux or EndeavourOS (not tested on other distros)
+- Pacman package manager
 - `neovim`
 - `wezterm`
 - `ranger`
@@ -37,6 +39,8 @@ my collection of dotfiles :3
 - `zsh-syntax-highlighting`
 
 ## placing dotfiles in the right place
+
+*Note:* For the pacman hooks, manually place them in `/etc/pacman.d/` then make them executable
 
 1. Clone the repo into the home directory
 2. Install `stow`
