@@ -28,7 +28,13 @@ source /usr/share/nvm/init-nvm.sh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/plugins/colored-man-pages/colored-man-pages.plugin.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# this is for WSL and Windows Terminal
+# allows the user to open a tab in the same directory by duplicating it
+keep_current_path() {
+  printf "\e]9;9;%s\e\\" "$(wslpath -w "$PWD")"
+}
+precmd_functions+=(keep_current_path)
