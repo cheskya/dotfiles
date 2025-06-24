@@ -16,6 +16,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias cpwd='echo -n $PWD | wl-copy && echo "Path copied to clipboard!"'
 alias mkcd='(){ mkdir $1 && cd $1 }'
+alias pyserver='python -m http.server'
 
 # For menu select
 autoload -Uz compinit
